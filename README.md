@@ -10,4 +10,6 @@ The purpose of this project is to review the process of fetching data from an on
 ### Objectives of the project
 * Fetch images from Unsplash API 
 * Create a Infinity Scroll Page that displays images from Unsplash API
-######################################
+
+
+-----

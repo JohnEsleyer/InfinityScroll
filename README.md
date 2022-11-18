@@ -11,5 +11,7 @@ The purpose of this project is to review the process of fetching data from an on
 * Fetch images from Unsplash API 
 * Create a Infinity Scroll Page that displays images from Unsplash API
 
+### Tech Stack used:
+* Vanilla HTML/CSS/JS
 
------
+---

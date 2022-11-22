@@ -22,8 +22,7 @@ function displayPhotos(){
     photosArray.forEach((photo) => {
         // Create <a> to link to Unsplash
         const item = document.createElement('a');
-        // item.setAttribute('href',photo.links.html);
-        // item.setAttribute('target', '_blank');
+       
 
         setAttributes(item, {
             href: photo.links.html,
@@ -56,6 +55,14 @@ async function getPhotos(){
         // Catch Error Here
     }
 }
+
+// Check to see if scrolling near bottom of page, load more photos
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000){
+        getPhotos();
+        console.log('load more');
+    }
+});
 
 // On load
 getPhotos();
